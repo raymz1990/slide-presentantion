@@ -1,0 +1,10 @@
+title: GS Risk presentation Quarto Template
+author: Raymundo Eduardo Pilz
+version: 0.0.1
+contributes:
+  formats: 
+    revealjs:
+      logo: logo.png
+      theme: style.scss
+      title-slide-attributes:
+        data-background-color: "#D9DBDB"

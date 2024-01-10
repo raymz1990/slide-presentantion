@@ -1,0 +1,207 @@
+/*-- scss:defaults --*/
+
+// fonts
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('assets/fonts/Century Gothic.otf') format('otf'),
+       url('assets/fonts/Century Gothic.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Century Gothic', sans-serif;
+}
+
+
+.reveal a {
+  line-height: 1.3em;
+}
+
+
+// font family
+$font-family-sans-serif: 'Century Gothic', Arial, sans-serif !default;
+$presentation-heading-font: 'Century Gothic', Times New Roman, serif  !default;
+
+// font size
+$presentation-font-size-root: 30px;
+$presentation-line-height: 1.5em;
+
+// font colour
+$presentation-heading-color:  #000000 !default;
+
+// code
+$code-color:                  #b20e10 !default;
+$code-block-font-size:           0.6em;
+$code-block-border-color:     #000000;
+$code-block-bg:               #e6e7e7;
+
+// bg colours 
+$body-color:                 #000000;
+$link-color:                 #595A5C; // cor dos link e filtro de seleção
+$body-bg:                    #ffffff;
+
+// headings
+$presentation-heading-font: "Century Gothic", sans-serif,
+  FreeSerif, serif !default;
+$presentation-heading-color: #ffffff !default;
+$presentation-title-slide-text-align: left;
+/* First Page */
+
+.title {
+  font-size: 90px !important;
+  color: #fff !important;
+}
+
+.subtitle {
+  color: #fff !important;
+}
+
+.quarto-title-author-name {
+  color: #fff !important;
+  text-align: left;
+}
+
+#title-slide {
+  text-align: left;
+
+  .quarto-title-authors {
+    justify-content: left;
+  
+    .quarto-title-author { // optional, test it for yourself
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+}
+
+
+/*-- scss:rules --*/
+
+.btn-webr {
+  background-color: $code-block-bg !important;
+  border-color: $link-color;
+  border-width: 3px;
+  border-radius: 15px !important;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: $font-family-sans-serif;
+  font-size: 20px;
+  cursor:pointer;
+}
+
+.reveal .slides {
+  padding: 30px;
+  width: 80% !important;
+  text-align: left;
+  margin-right: 45px; 
+}
+
+.reveal pre {
+  visibility: visible !important;
+}
+
+h1 {
+  padding-bottom: 30px;
+  padding-top: 60px;
+}
+
+h2 {
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.author {
+  color: $body-bg;
+  font-size: $presentation-h4-font-size;
+  font-family: $font-family-sans-serif;
+}
+
+.author a {
+  color: $body-bg;
+  font-size: $presentation-h4-font-size;
+  font-family: $font-family-sans-serif;
+}
+
+section.has-dark-background a, section.has-dark-background a:hover {
+  color: $body-bg;
+}
+
+.reveal .footer {
+  color: #b4b7b8;
+  font-family: $font-family-sans-serif;
+  padding-bottom: 25px;
+}
+
+.reveal .slide-logo {
+  right: 30px;
+  padding-right: 20px !important;
+  padding-bottom: 30px !important;
+  max-height: 80px !important;
+  z-index: 1;
+}
+
+.reveal .slide-menu-button {
+    left: 5px;
+    top: 15px;
+    padding-left: 10px;
+    color: #b4b7b8;
+  }
+
+.reveal .progress { // barra de progresso
+  background: rgba(0, 0, 0, 0.2);
+  color: #595A5C;
+  height: 0.6%;
+}
+
+.right {
+  text-align: right !important
+}
+
+/* BACKROUND*/
+
+  $color1: #F5B947;
+  $color2: #595A5C;
+  $block-size: 1%;
+
+  .reveal .slide-background {
+  background: $color1;
+  }
+
+  .reveal .slide-background {
+    background: linear-gradient(to bottom, $color1 0%, $color1 70px, $color2 20px);
+  }
+
+/* estilos */
+  .slide-title {
+    padding-bottom: 35px;
+    padding-top: 0.1px;
+    margin-left: -200px;
+    margin-top: -20px;
+    font-size: 40px;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .slide-text {
+    margin-left: -180px;
+    margin-top: -30px;
+    font-size: 30px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .slide_box {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -200px;  // Esta é a margem que você deseja definir
+    background: #2D2D2E;
+    padding: 15px;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    color: white;  // Cor do texto dentro da caixa
+  }
